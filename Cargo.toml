@@ -2,6 +2,21 @@
 name = "anon-flatten"
 version = "0.1.0"
 edition = "2024"
+authors = ["yenharvey <2117555041@qq.com>"]
+description = "一个简单的文件目录扁平化工具，让复杂的嵌套文件夹结构变得和爱音一样平 | A simple file directory flattening tool inspired by Anon Chihaya"
+license = "MIT"
+repository = "https://github.com/mygo-studio/anon-flatten.git"
+homepage = "https://github.com/mygo-studio/anon-flatten"
+documentation = "https://docs.rs/anon-flatten"
+readme = "README.md"
+keywords = [
+    "cli",
+    "file-management",
+    "flatten",
+    "mygo",
+    "anon-chihaya",
+]
+categories = ["command-line-utilities"]
 
 [dependencies]
 anyhow = "1.0.98"
@@ -13,3 +28,9 @@ walkdir = "2.5.0"
 
 [dev-dependencies]
 tempfile = "3.20.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

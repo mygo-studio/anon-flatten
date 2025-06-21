@@ -28,6 +28,12 @@ cd anon-flatten
 cargo build --release
 ```
 
+### 从 Crates.io 安装
+
+```bash
+cargo install anon-flatten
+```
+
 ### 使用方法
 
 ```bash
